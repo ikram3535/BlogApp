@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creators</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex; /* Li öğelerini yan yana sıralamak için flex özelliğini ekliyoruz */
+      flex-direction: row; /* Li öğelerini yatayda sıralamak için flex-direction özelliğini row yapıyoruz */
+      justify-content: space-around; /* Li öğelerini yatayda ortalamak için space-around ekliyoruz */
+    }
+
+    li creat {
+      text-align: center;
+      margin-right: 50px;
+      width: 150px;
+
+    }
+
+   
+
+    li p {
+      margin: 0;
+    }
+
+    li img {
+      width: 200px;
+      height: 200px;
+      margin-top: 0px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Creators</h1>
+  </header>
+  
+  <main>
+   
+    <ul>
+      <li class="creat">
+        <img src="media/post/picture1.png" alt="John Doe Image">
+        <h2>John Doe</h2>
+        <p>John Doe's Blog</p>
+        <p>Created on: 2023-07-01</p>
+      </li>
+      <li class="creat">
+        <img src="media/post/picture2.png" alt="Jane Smith Image">
+        <h2>Jane Smith</h2>
+        <p>Jane Smith's Blog</p>
+        <p>Created on: 2023-07-05</p>
+      </li>
+      <!-- Diğer yaratıcılar ve bloglar buraya eklenebilir -->
+    </ul>
+  </main>
+
+  <footer>
+    &copy; 2023 Blog Site. Tüm hakları saklıdır.
+  </footer>
+</body>
+</html>
+
+
+{% endblock content %}

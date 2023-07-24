@@ -1,0 +1,132 @@
+
+{% load static %}
+<html>
+<head>
+  <title>Archive</title>
+  <style>
+    html, body {
+        height: 100%;
+      }
+      
+      body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      h1, h2 {
+        margin: 0;
+        padding: 0;
+      }
+      
+      main {
+        flex: 1;
+        padding: 20px;
+      }
+
+      #article-list li {
+        display: inline-block;
+        margin-right: 10px;
+        border: 1px solid grey;
+        padding: 10px;
+      }
+      
+      #article-list li a {
+        color: red;
+        text-decoration: none;
+      }
+      
+      #article-list li .date {
+        margin-left: 10px;
+        color: #777;
+        font-style: italic;
+      }
+      
+      #article-list li p {
+        border: 1px solid grey;
+        padding: 10px;
+      }
+      
+      
+      
+      #article-list {
+        margin-bottom: 20px;
+      }
+      
+      #article-list h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      
+      #article-list ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      
+  </style>
+</head>
+<body>
+    <header>
+        <h1 class="Home" style="float: left; cursor: pointer;" onclick="goToHome()">Home</h1>
+        <h1>Archive</h1>
+      </header>
+      
+      <script>
+        function goToHome() {
+          window.location.href = "/";
+        }
+      </script>
+      
+  
+  <main>
+    <section id="article-list">
+      <h2>Eski Makaleler</h2>
+      <ul>
+        <li>
+          <a href="#">Makale Başlığı 1</a>
+          <span class="date">01.01.2022</span>
+          <p>{% lorem 10 %}</p>
+        </li>
+        <li>
+          <a href="#">Makale Başlığı 2</a>
+          <span class="date">15.05.2021</span>
+          <p> {% lorem 10 %}</p>
+        </li>
+        <li>
+          <a href="#">Makale Başlığı 3</a>
+          <span class="date">10.11.2020</span>
+          <p> {% lorem 10 %}</p>
+
+        </li>
+        <!-- Diğer makaleler buraya eklenebilir -->
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+    &copy; 2023 Blog Site. Tüm hakları saklıdır.
+  </footer>
+</body>
+</html>
+
+
+#Explore hissesini duzenlemek
+#Task iste
+
